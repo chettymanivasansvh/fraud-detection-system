@@ -22,4 +22,4 @@ jobs:
           cache: maven
 
       - name: Build and Run Tests
-        run: mvn -B clean test
+        run: mvn -B clean test -Dspring.profiles.active=test
